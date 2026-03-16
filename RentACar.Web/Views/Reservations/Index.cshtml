@@ -1,0 +1,78 @@
+﻿@model IEnumerable<RentACar.Data.Models.Reservation>
+
+@{
+    ViewData["Title"] = "Reservations";
+}
+
+<h2>Reservations</h2>
+
+@if (User.IsInRole("User"))
+{
+    <a asp-action="Create" class="btn btn-success mb-3">Make a Reservation</a>
+}
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No reservations found.</div>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Car</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                @if (User.IsInRole("Admin"))
+                {
+                    <th>User</th>
+                }
+                <th>Status</th>
+                @if (User.IsInRole("Admin"))
+                {
+                    <th>Actions</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reservation in Model)
+            {
+                <tr>
+                    <td>@reservation.Car.Brand @reservation.Car.Model</td>
+                    <td>@reservation.StartDate.ToString("dd/MM/yyyy")</td>
+                    <td>@reservation.EndDate.ToString("dd/MM/yyyy")</td>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <td>@reservation.User.UserName</td>
+                    }
+                    <td>
+                        @if (reservation.IsApproved)
+                        {
+                            <span class="badge bg-success">Approved</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-warning text-dark">Pending</span>
+                        }
+                    </td>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <td>
+                            @if (!reservation.IsApproved)
+                            {
+                                <form asp-action="Approve" method="post" style="display:inline">
+                                    <input type="hidden" name="id" value="@reservation.Id" />
+                                    <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                                </form>
+                            }
+                            <form asp-action="Delete" method="post" style="display:inline">
+                                <input type="hidden" name="id" value="@reservation.Id" />
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
