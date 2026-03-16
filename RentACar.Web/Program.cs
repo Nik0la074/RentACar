@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RentACar.Data;
 using RentACar.Data.Models;
+using RentACar.Services.Implementations;
+using RentACar.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,10 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 })
 .AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders();
+
+builder.Services.AddScoped<RentACar.Services.Interfaces.ICarService, RentACar.Services.Implementations.CarService>();
+builder.Services.AddScoped<RentACar.Services.Interfaces.IReservationService, RentACar.Services.Implementations.ReservationService>();
+builder.Services.AddScoped<RentACar.Services.Interfaces.IUserService, RentACar.Services.Implementations.UserService>();
 
 builder.Services.AddControllersWithViews();
 
