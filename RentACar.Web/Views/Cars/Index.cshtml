@@ -1,0 +1,49 @@
+﻿@model IEnumerable<RentACar.Data.Models.Car>
+
+@{
+    ViewData["Title"] = "Cars";
+}
+
+<h2>Available Cars</h2>
+
+@if (User.IsInRole("Admin"))
+{
+    <a asp-action="Create" class="btn btn-success mb-3">Add New Car</a>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Seats</th>
+            <th>Price/Day</th>
+            <th>Description</th>
+            @if (User.IsInRole("Admin"))
+            {
+                <th>Actions</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model)
+        {
+            <tr>
+                <td>@car.Brand</td>
+                <td>@car.Model</td>
+                <td>@car.Year</td>
+                <td>@car.Seats</td>
+                <td>@car.PricePerDay lv/day</td>
+                <td>@car.Description</td>
+                @if (User.IsInRole("Admin"))
+                {
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning btn-sm">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
