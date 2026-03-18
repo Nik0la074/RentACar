@@ -7,9 +7,11 @@ using RentACar.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure database connection using Entity Framework
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// Configure Identity for user authentication and authorization
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 {
     options.Password.RequireDigit = true;
@@ -20,14 +22,16 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 .AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders();
 
-builder.Services.AddScoped<RentACar.Services.Interfaces.ICarService, RentACar.Services.Implementations.CarService>();
-builder.Services.AddScoped<RentACar.Services.Interfaces.IReservationService, RentACar.Services.Implementations.ReservationService>();
-builder.Services.AddScoped<RentACar.Services.Interfaces.IUserService, RentACar.Services.Implementations.UserService>();
+// Register application services
+builder.Services.AddScoped<ICarService, CarService>();
+builder.Services.AddScoped<IReservationService, ReservationService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+// Configure error handling for production
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -38,6 +42,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+// Enable authentication and authorization middleware
 app.UseAuthentication();
 app.UseAuthorization();
 
@@ -45,6 +50,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+// Seed roles and admin user on startup
 using (var scope = app.Services.CreateScope())
 {
     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();

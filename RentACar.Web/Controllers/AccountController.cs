@@ -5,6 +5,9 @@ using RentACar.Web.ViewModels;
 
 namespace RentACar.Web.Controllers
 {
+    /// <summary>
+    /// Handles user authentication including registration, login and logout.
+    /// </summary>
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
@@ -18,9 +21,11 @@ namespace RentACar.Web.Controllers
             _signInManager = signInManager;
         }
 
+        /// <summary>Displays the registration form.</summary>
         [HttpGet]
         public IActionResult Register() => View();
 
+        /// <summary>Processes the registration form and creates a new user.</summary>
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
@@ -53,9 +58,11 @@ namespace RentACar.Web.Controllers
             return View(model);
         }
 
+        /// <summary>Displays the login form.</summary>
         [HttpGet]
         public IActionResult Login() => View();
 
+        /// <summary>Processes the login form and authenticates the user.</summary>
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
@@ -72,6 +79,7 @@ namespace RentACar.Web.Controllers
             return View(model);
         }
 
+        /// <summary>Logs out the current user.</summary>
         [HttpPost]
         public async Task<IActionResult> Logout()
         {

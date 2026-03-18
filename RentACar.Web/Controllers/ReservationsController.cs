@@ -7,6 +7,9 @@ using RentACar.Web.ViewModels;
 
 namespace RentACar.Web.Controllers
 {
+    /// <summary>
+    /// Handles reservation management including searching, creating and approving reservations.
+    /// </summary>
     [Authorize]
     public class ReservationsController : Controller
     {
@@ -24,7 +27,7 @@ namespace RentACar.Web.Controllers
             _userManager = userManager;
         }
 
-        // User sees their own reservations, Admin sees all
+        /// <summary>Displays reservations. Admin sees all, User sees only their own.</summary>
         public IActionResult Index()
         {
             if (User.IsInRole("Admin"))
@@ -38,13 +41,14 @@ namespace RentACar.Web.Controllers
             return View(userReservations);
         }
 
-        // Search for available cars
+        /// <summary>Displays the search form for available cars.</summary>
         [HttpGet]
         public IActionResult Create()
         {
             return View(new SearchCarsViewModel());
         }
 
+        /// <summary>Searches for available cars based on selected dates.</summary>
         [HttpPost]
         public IActionResult Search(SearchCarsViewModel model)
         {
@@ -61,7 +65,7 @@ namespace RentACar.Web.Controllers
             return View("Create", model);
         }
 
-        // Create reservation
+        /// <summary>Creates a new reservation for the selected car and dates.</summary>
         [HttpPost]
         public IActionResult Reserve(CreateReservationViewModel model)
         {
@@ -83,7 +87,7 @@ namespace RentACar.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // Admin only - Approve reservation
+        /// <summary>Approves a reservation. Admin only.</summary>
         [Authorize(Roles = "Admin")]
         [HttpPost]
         public IActionResult Approve(int id)
@@ -92,7 +96,7 @@ namespace RentACar.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // Admin only - Delete reservation
+        /// <summary>Deletes a reservation. Admin only.</summary>
         [Authorize(Roles = "Admin")]
         [HttpPost]
         public IActionResult Delete(int id)

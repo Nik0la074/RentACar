@@ -5,6 +5,9 @@ using RentACar.Services.Interfaces;
 
 namespace RentACar.Web.Controllers
 {
+    /// <summary>
+    /// Handles car management including listing, creating, editing and deleting cars.
+    /// </summary>
     public class CarsController : Controller
     {
         private readonly ICarService _carService;
@@ -14,7 +17,7 @@ namespace RentACar.Web.Controllers
             _carService = carService;
         }
 
-        // All users can see the list
+        /// <summary>Displays a list of all cars. Accessible by all authenticated users.</summary>
         [Authorize]
         public IActionResult Index()
         {
@@ -22,10 +25,11 @@ namespace RentACar.Web.Controllers
             return View(cars);
         }
 
-        // Only Admin can create
+        /// <summary>Displays the form for adding a new car. Admin only.</summary>
         [Authorize(Roles = "Admin")]
         public IActionResult Create() => View();
 
+        /// <summary>Processes the form and adds a new car. Admin only.</summary>
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public IActionResult Create(Car car)
@@ -37,7 +41,7 @@ namespace RentACar.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // Only Admin can edit
+        /// <summary>Displays the form for editing a car. Admin only.</summary>
         [Authorize(Roles = "Admin")]
         public IActionResult Edit(int id)
         {
@@ -46,6 +50,7 @@ namespace RentACar.Web.Controllers
             return View(car);
         }
 
+        /// <summary>Processes the form and updates the car. Admin only.</summary>
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public IActionResult Edit(Car car)
@@ -57,7 +62,7 @@ namespace RentACar.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // Only Admin can delete
+        /// <summary>Displays the confirmation page for deleting a car. Admin only.</summary>
         [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
@@ -66,6 +71,7 @@ namespace RentACar.Web.Controllers
             return View(car);
         }
 
+        /// <summary>Deletes the car after confirmation. Admin only.</summary>
         [HttpPost, ActionName("Delete")]
         [Authorize(Roles = "Admin")]
         public IActionResult DeleteConfirmed(int id)
