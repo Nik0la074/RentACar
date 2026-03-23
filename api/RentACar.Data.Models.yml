@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: RentACar.Data.Models
+  commentId: N:RentACar.Data.Models
+  id: RentACar.Data.Models
+  children:
+  - RentACar.Data.Models.ApplicationUser
+  - RentACar.Data.Models.Car
+  - RentACar.Data.Models.Reservation
+  langs:
+  - csharp
+  - vb
+  name: RentACar.Data.Models
+  nameWithType: RentACar.Data.Models
+  fullName: RentACar.Data.Models
+  type: Namespace
+  assemblies:
+  - RentACar.Data
+references:
+- uid: RentACar.Data.Models.ApplicationUser
+  commentId: T:RentACar.Data.Models.ApplicationUser
+  parent: RentACar.Data.Models
+  href: RentACar.Data.Models.ApplicationUser.html
+  name: ApplicationUser
+  nameWithType: ApplicationUser
+  fullName: RentACar.Data.Models.ApplicationUser
+- uid: RentACar.Data.Models.Car
+  commentId: T:RentACar.Data.Models.Car
+  parent: RentACar.Data.Models
+  href: RentACar.Data.Models.Car.html
+  name: Car
+  nameWithType: Car
+  fullName: RentACar.Data.Models.Car
+- uid: RentACar.Data.Models.Reservation
+  commentId: T:RentACar.Data.Models.Reservation
+  parent: RentACar.Data.Models
+  href: RentACar.Data.Models.Reservation.html
+  name: Reservation
+  nameWithType: Reservation
+  fullName: RentACar.Data.Models.Reservation
+- uid: RentACar.Data.Models
+  commentId: N:RentACar.Data.Models
+  href: RentACar.html
+  name: RentACar.Data.Models
+  nameWithType: RentACar.Data.Models
+  fullName: RentACar.Data.Models
+  spec.csharp:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Data
+    name: Data
+    href: RentACar.Data.html
+  - name: .
+  - uid: RentACar.Data.Models
+    name: Models
+    href: RentACar.Data.Models.html
+  spec.vb:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Data
+    name: Data
+    href: RentACar.Data.html
+  - name: .
+  - uid: RentACar.Data.Models
+    name: Models
+    href: RentACar.Data.Models.html

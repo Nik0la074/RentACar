@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: RentACar.Data
+  commentId: N:RentACar.Data
+  id: RentACar.Data
+  children:
+  - RentACar.Data.AppDbContext
+  langs:
+  - csharp
+  - vb
+  name: RentACar.Data
+  nameWithType: RentACar.Data
+  fullName: RentACar.Data
+  type: Namespace
+  assemblies:
+  - RentACar.Data
+references:
+- uid: RentACar.Data.AppDbContext
+  commentId: T:RentACar.Data.AppDbContext
+  parent: RentACar.Data
+  href: RentACar.Data.AppDbContext.html
+  name: AppDbContext
+  nameWithType: AppDbContext
+  fullName: RentACar.Data.AppDbContext
+- uid: RentACar.Data
+  commentId: N:RentACar.Data
+  href: RentACar.html
+  name: RentACar.Data
+  nameWithType: RentACar.Data
+  fullName: RentACar.Data
+  spec.csharp:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Data
+    name: Data
+    href: RentACar.Data.html
+  spec.vb:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Data
+    name: Data
+    href: RentACar.Data.html

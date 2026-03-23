@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: RentACar.Data.Seeding
+  commentId: N:RentACar.Data.Seeding
+  id: RentACar.Data.Seeding
+  children:
+  - RentACar.Data.Seeding.DbSeeder
+  langs:
+  - csharp
+  - vb
+  name: RentACar.Data.Seeding
+  nameWithType: RentACar.Data.Seeding
+  fullName: RentACar.Data.Seeding
+  type: Namespace
+  assemblies:
+  - RentACar.Data
+references:
+- uid: RentACar.Data.Seeding.DbSeeder
+  commentId: T:RentACar.Data.Seeding.DbSeeder
+  href: RentACar.Data.Seeding.DbSeeder.html
+  name: DbSeeder
+  nameWithType: DbSeeder
+  fullName: RentACar.Data.Seeding.DbSeeder

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: RentACar.Data.Migrations
+  commentId: N:RentACar.Data.Migrations
+  id: RentACar.Data.Migrations
+  children:
+  - RentACar.Data.Migrations.InitialCreate
+  langs:
+  - csharp
+  - vb
+  name: RentACar.Data.Migrations
+  nameWithType: RentACar.Data.Migrations
+  fullName: RentACar.Data.Migrations
+  type: Namespace
+  assemblies:
+  - RentACar.Data
+references:
+- uid: RentACar.Data.Migrations.InitialCreate
+  commentId: T:RentACar.Data.Migrations.InitialCreate
+  href: RentACar.Data.Migrations.InitialCreate.html
+  name: InitialCreate
+  nameWithType: InitialCreate
+  fullName: RentACar.Data.Migrations.InitialCreate

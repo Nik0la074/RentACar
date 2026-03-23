@@ -1,0 +1,375 @@
+### YamlMime:ManagedReference
+items:
+- uid: RentACar.Services.Interfaces.IUserService
+  commentId: T:RentACar.Services.Interfaces.IUserService
+  id: IUserService
+  parent: RentACar.Services.Interfaces
+  children:
+  - RentACar.Services.Interfaces.IUserService.Delete(System.String)
+  - RentACar.Services.Interfaces.IUserService.GetAll
+  - RentACar.Services.Interfaces.IUserService.GetById(System.String)
+  - RentACar.Services.Interfaces.IUserService.Update(RentACar.Data.Models.ApplicationUser)
+  langs:
+  - csharp
+  - vb
+  name: IUserService
+  nameWithType: IUserService
+  fullName: RentACar.Services.Interfaces.IUserService
+  type: Interface
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/IUserService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: IUserService
+    path: RentACar.Services/Interfaces/IUserService.cs
+    startLine: 7
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Defines operations for managing users in the system.
+  example: []
+  syntax:
+    content: public interface IUserService
+    content.vb: Public Interface IUserService
+  derivedClasses:
+  - RentACar.Services.Implementations.UserService
+- uid: RentACar.Services.Interfaces.IUserService.GetAll
+  commentId: M:RentACar.Services.Interfaces.IUserService.GetAll
+  id: GetAll
+  parent: RentACar.Services.Interfaces.IUserService
+  langs:
+  - csharp
+  - vb
+  name: GetAll()
+  nameWithType: IUserService.GetAll()
+  fullName: RentACar.Services.Interfaces.IUserService.GetAll()
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/IUserService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: GetAll
+    path: RentACar.Services/Interfaces/IUserService.cs
+    startLine: 10
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Returns all users.
+  example: []
+  syntax:
+    content: IEnumerable<ApplicationUser> GetAll()
+    return:
+      type: System.Collections.Generic.IEnumerable{RentACar.Data.Models.ApplicationUser}
+    content.vb: Function GetAll() As IEnumerable(Of ApplicationUser)
+  overload: RentACar.Services.Interfaces.IUserService.GetAll*
+- uid: RentACar.Services.Interfaces.IUserService.GetById(System.String)
+  commentId: M:RentACar.Services.Interfaces.IUserService.GetById(System.String)
+  id: GetById(System.String)
+  parent: RentACar.Services.Interfaces.IUserService
+  langs:
+  - csharp
+  - vb
+  name: GetById(string)
+  nameWithType: IUserService.GetById(string)
+  fullName: RentACar.Services.Interfaces.IUserService.GetById(string)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/IUserService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: GetById
+    path: RentACar.Services/Interfaces/IUserService.cs
+    startLine: 13
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Returns a user by their ID, or null if not found.
+  example: []
+  syntax:
+    content: ApplicationUser? GetById(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: RentACar.Data.Models.ApplicationUser
+    content.vb: Function GetById(id As String) As ApplicationUser
+  overload: RentACar.Services.Interfaces.IUserService.GetById*
+  nameWithType.vb: IUserService.GetById(String)
+  fullName.vb: RentACar.Services.Interfaces.IUserService.GetById(String)
+  name.vb: GetById(String)
+- uid: RentACar.Services.Interfaces.IUserService.Update(RentACar.Data.Models.ApplicationUser)
+  commentId: M:RentACar.Services.Interfaces.IUserService.Update(RentACar.Data.Models.ApplicationUser)
+  id: Update(RentACar.Data.Models.ApplicationUser)
+  parent: RentACar.Services.Interfaces.IUserService
+  langs:
+  - csharp
+  - vb
+  name: Update(ApplicationUser)
+  nameWithType: IUserService.Update(ApplicationUser)
+  fullName: RentACar.Services.Interfaces.IUserService.Update(RentACar.Data.Models.ApplicationUser)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/IUserService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: Update
+    path: RentACar.Services/Interfaces/IUserService.cs
+    startLine: 16
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Updates an existing user.
+  example: []
+  syntax:
+    content: void Update(ApplicationUser user)
+    parameters:
+    - id: user
+      type: RentACar.Data.Models.ApplicationUser
+    content.vb: Sub Update(user As ApplicationUser)
+  overload: RentACar.Services.Interfaces.IUserService.Update*
+- uid: RentACar.Services.Interfaces.IUserService.Delete(System.String)
+  commentId: M:RentACar.Services.Interfaces.IUserService.Delete(System.String)
+  id: Delete(System.String)
+  parent: RentACar.Services.Interfaces.IUserService
+  langs:
+  - csharp
+  - vb
+  name: Delete(string)
+  nameWithType: IUserService.Delete(string)
+  fullName: RentACar.Services.Interfaces.IUserService.Delete(string)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/IUserService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: Delete
+    path: RentACar.Services/Interfaces/IUserService.cs
+    startLine: 19
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Deletes a user by their ID.
+  example: []
+  syntax:
+    content: void Delete(string id)
+    parameters:
+    - id: id
+      type: System.String
+    content.vb: Sub Delete(id As String)
+  overload: RentACar.Services.Interfaces.IUserService.Delete*
+  nameWithType.vb: IUserService.Delete(String)
+  fullName.vb: RentACar.Services.Interfaces.IUserService.Delete(String)
+  name.vb: Delete(String)
+references:
+- uid: RentACar.Services.Interfaces
+  commentId: N:RentACar.Services.Interfaces
+  href: RentACar.html
+  name: RentACar.Services.Interfaces
+  nameWithType: RentACar.Services.Interfaces
+  fullName: RentACar.Services.Interfaces
+  spec.csharp:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Services
+    name: Services
+    href: RentACar.Services.html
+  - name: .
+  - uid: RentACar.Services.Interfaces
+    name: Interfaces
+    href: RentACar.Services.Interfaces.html
+  spec.vb:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Services
+    name: Services
+    href: RentACar.Services.html
+  - name: .
+  - uid: RentACar.Services.Interfaces
+    name: Interfaces
+    href: RentACar.Services.Interfaces.html
+- uid: RentACar.Services.Interfaces.IUserService.GetAll*
+  commentId: Overload:RentACar.Services.Interfaces.IUserService.GetAll
+  href: RentACar.Services.Interfaces.IUserService.html#RentACar_Services_Interfaces_IUserService_GetAll
+  name: GetAll
+  nameWithType: IUserService.GetAll
+  fullName: RentACar.Services.Interfaces.IUserService.GetAll
+- uid: System.Collections.Generic.IEnumerable{RentACar.Data.Models.ApplicationUser}
+  commentId: T:System.Collections.Generic.IEnumerable{RentACar.Data.Models.ApplicationUser}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ApplicationUser>
+  nameWithType: IEnumerable<ApplicationUser>
+  fullName: System.Collections.Generic.IEnumerable<RentACar.Data.Models.ApplicationUser>
+  nameWithType.vb: IEnumerable(Of ApplicationUser)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of RentACar.Data.Models.ApplicationUser)
+  name.vb: IEnumerable(Of ApplicationUser)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: RentACar.Data.Models.ApplicationUser
+    name: ApplicationUser
+    href: RentACar.Data.Models.ApplicationUser.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: RentACar.Data.Models.ApplicationUser
+    name: ApplicationUser
+    href: RentACar.Data.Models.ApplicationUser.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: RentACar.Services.Interfaces.IUserService.GetById*
+  commentId: Overload:RentACar.Services.Interfaces.IUserService.GetById
+  href: RentACar.Services.Interfaces.IUserService.html#RentACar_Services_Interfaces_IUserService_GetById_System_String_
+  name: GetById
+  nameWithType: IUserService.GetById
+  fullName: RentACar.Services.Interfaces.IUserService.GetById
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: RentACar.Data.Models.ApplicationUser
+  commentId: T:RentACar.Data.Models.ApplicationUser
+  parent: RentACar.Data.Models
+  href: RentACar.Data.Models.ApplicationUser.html
+  name: ApplicationUser
+  nameWithType: ApplicationUser
+  fullName: RentACar.Data.Models.ApplicationUser
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RentACar.Data.Models
+  commentId: N:RentACar.Data.Models
+  href: RentACar.html
+  name: RentACar.Data.Models
+  nameWithType: RentACar.Data.Models
+  fullName: RentACar.Data.Models
+  spec.csharp:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Data
+    name: Data
+    href: RentACar.Data.html
+  - name: .
+  - uid: RentACar.Data.Models
+    name: Models
+    href: RentACar.Data.Models.html
+  spec.vb:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Data
+    name: Data
+    href: RentACar.Data.html
+  - name: .
+  - uid: RentACar.Data.Models
+    name: Models
+    href: RentACar.Data.Models.html
+- uid: RentACar.Services.Interfaces.IUserService.Update*
+  commentId: Overload:RentACar.Services.Interfaces.IUserService.Update
+  href: RentACar.Services.Interfaces.IUserService.html#RentACar_Services_Interfaces_IUserService_Update_RentACar_Data_Models_ApplicationUser_
+  name: Update
+  nameWithType: IUserService.Update
+  fullName: RentACar.Services.Interfaces.IUserService.Update
+- uid: RentACar.Services.Interfaces.IUserService.Delete*
+  commentId: Overload:RentACar.Services.Interfaces.IUserService.Delete
+  href: RentACar.Services.Interfaces.IUserService.html#RentACar_Services_Interfaces_IUserService_Delete_System_String_
+  name: Delete
+  nameWithType: IUserService.Delete
+  fullName: RentACar.Services.Interfaces.IUserService.Delete

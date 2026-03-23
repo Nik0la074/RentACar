@@ -1,0 +1,28 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["**/*.csproj"],
+          "src": "C:/Users/user1/source/repos/RentACar"
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": ["api/**.yml", "api/index.md"]
+      },
+      {
+        "files": ["*.md", "toc.yml"]
+      }
+    ],
+    "dest": "_site",
+    "globalMetadata": {
+      "_appName": "RentACar Documentation",
+      "_appTitle": "RentACar Documentation"
+    }
+  }
+}

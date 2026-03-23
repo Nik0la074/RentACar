@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: RentACar.Web.Models
+  commentId: N:RentACar.Web.Models
+  id: RentACar.Web.Models
+  children:
+  - RentACar.Web.Models.ErrorViewModel
+  langs:
+  - csharp
+  - vb
+  name: RentACar.Web.Models
+  nameWithType: RentACar.Web.Models
+  fullName: RentACar.Web.Models
+  type: Namespace
+  assemblies:
+  - RentACar.Web
+references:
+- uid: RentACar.Web.Models.ErrorViewModel
+  commentId: T:RentACar.Web.Models.ErrorViewModel
+  href: RentACar.Web.Models.ErrorViewModel.html
+  name: ErrorViewModel
+  nameWithType: ErrorViewModel
+  fullName: RentACar.Web.Models.ErrorViewModel

@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: RentACar.Web.ViewModels
+  commentId: N:RentACar.Web.ViewModels
+  id: RentACar.Web.ViewModels
+  children:
+  - RentACar.Web.ViewModels.CreateReservationViewModel
+  - RentACar.Web.ViewModels.CreateUserViewModel
+  - RentACar.Web.ViewModels.LoginViewModel
+  - RentACar.Web.ViewModels.RegisterViewModel
+  - RentACar.Web.ViewModels.SearchCarsViewModel
+  langs:
+  - csharp
+  - vb
+  name: RentACar.Web.ViewModels
+  nameWithType: RentACar.Web.ViewModels
+  fullName: RentACar.Web.ViewModels
+  type: Namespace
+  assemblies:
+  - RentACar.Web
+references:
+- uid: RentACar.Web.ViewModels.CreateReservationViewModel
+  commentId: T:RentACar.Web.ViewModels.CreateReservationViewModel
+  parent: RentACar.Web.ViewModels
+  href: RentACar.Web.ViewModels.CreateReservationViewModel.html
+  name: CreateReservationViewModel
+  nameWithType: CreateReservationViewModel
+  fullName: RentACar.Web.ViewModels.CreateReservationViewModel
+- uid: RentACar.Web.ViewModels.CreateUserViewModel
+  commentId: T:RentACar.Web.ViewModels.CreateUserViewModel
+  parent: RentACar.Web.ViewModels
+  href: RentACar.Web.ViewModels.CreateUserViewModel.html
+  name: CreateUserViewModel
+  nameWithType: CreateUserViewModel
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel
+- uid: RentACar.Web.ViewModels.LoginViewModel
+  commentId: T:RentACar.Web.ViewModels.LoginViewModel
+  parent: RentACar.Web.ViewModels
+  href: RentACar.Web.ViewModels.LoginViewModel.html
+  name: LoginViewModel
+  nameWithType: LoginViewModel
+  fullName: RentACar.Web.ViewModels.LoginViewModel
+- uid: RentACar.Web.ViewModels.RegisterViewModel
+  commentId: T:RentACar.Web.ViewModels.RegisterViewModel
+  parent: RentACar.Web.ViewModels
+  href: RentACar.Web.ViewModels.RegisterViewModel.html
+  name: RegisterViewModel
+  nameWithType: RegisterViewModel
+  fullName: RentACar.Web.ViewModels.RegisterViewModel
+- uid: RentACar.Web.ViewModels.SearchCarsViewModel
+  commentId: T:RentACar.Web.ViewModels.SearchCarsViewModel
+  parent: RentACar.Web.ViewModels
+  href: RentACar.Web.ViewModels.SearchCarsViewModel.html
+  name: SearchCarsViewModel
+  nameWithType: SearchCarsViewModel
+  fullName: RentACar.Web.ViewModels.SearchCarsViewModel
+- uid: RentACar.Web.ViewModels
+  commentId: N:RentACar.Web.ViewModels
+  href: RentACar.html
+  name: RentACar.Web.ViewModels
+  nameWithType: RentACar.Web.ViewModels
+  fullName: RentACar.Web.ViewModels
+  spec.csharp:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Web
+    name: Web
+    href: RentACar.Web.html
+  - name: .
+  - uid: RentACar.Web.ViewModels
+    name: ViewModels
+    href: RentACar.Web.ViewModels.html
+  spec.vb:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Web
+    name: Web
+    href: RentACar.Web.html
+  - name: .
+  - uid: RentACar.Web.ViewModels
+    name: ViewModels
+    href: RentACar.Web.ViewModels.html

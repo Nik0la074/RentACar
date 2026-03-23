@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: RentACar.Services.Interfaces
+  commentId: N:RentACar.Services.Interfaces
+  id: RentACar.Services.Interfaces
+  children:
+  - RentACar.Services.Interfaces.ICarService
+  - RentACar.Services.Interfaces.IReservationService
+  - RentACar.Services.Interfaces.IUserService
+  langs:
+  - csharp
+  - vb
+  name: RentACar.Services.Interfaces
+  nameWithType: RentACar.Services.Interfaces
+  fullName: RentACar.Services.Interfaces
+  type: Namespace
+  assemblies:
+  - RentACar.Services
+references:
+- uid: RentACar.Services.Interfaces.ICarService
+  commentId: T:RentACar.Services.Interfaces.ICarService
+  parent: RentACar.Services.Interfaces
+  href: RentACar.Services.Interfaces.ICarService.html
+  name: ICarService
+  nameWithType: ICarService
+  fullName: RentACar.Services.Interfaces.ICarService
+- uid: RentACar.Services.Interfaces.IReservationService
+  commentId: T:RentACar.Services.Interfaces.IReservationService
+  parent: RentACar.Services.Interfaces
+  href: RentACar.Services.Interfaces.IReservationService.html
+  name: IReservationService
+  nameWithType: IReservationService
+  fullName: RentACar.Services.Interfaces.IReservationService
+- uid: RentACar.Services.Interfaces.IUserService
+  commentId: T:RentACar.Services.Interfaces.IUserService
+  parent: RentACar.Services.Interfaces
+  href: RentACar.Services.Interfaces.IUserService.html
+  name: IUserService
+  nameWithType: IUserService
+  fullName: RentACar.Services.Interfaces.IUserService
+- uid: RentACar.Services.Interfaces
+  commentId: N:RentACar.Services.Interfaces
+  href: RentACar.html
+  name: RentACar.Services.Interfaces
+  nameWithType: RentACar.Services.Interfaces
+  fullName: RentACar.Services.Interfaces
+  spec.csharp:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Services
+    name: Services
+    href: RentACar.Services.html
+  - name: .
+  - uid: RentACar.Services.Interfaces
+    name: Interfaces
+    href: RentACar.Services.Interfaces.html
+  spec.vb:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Services
+    name: Services
+    href: RentACar.Services.html
+  - name: .
+  - uid: RentACar.Services.Interfaces
+    name: Interfaces
+    href: RentACar.Services.Interfaces.html

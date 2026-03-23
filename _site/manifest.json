@@ -1,0 +1,495 @@
+{
+  "source_base_path": "C:/Users/user1/source/repos/RentACar",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Data.AppDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Data.AppDbContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Data.AppDbContext",
+      "Summary": "<p sourcefile=\"api/RentACar.Data.AppDbContext.yml\" sourcestartlinenumber=\"1\">Database context for the Rent A Car application.\nExtends IdentityDbContext to support user authentication and authorization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Data.Migrations.InitialCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Data.Migrations.InitialCreate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Data.Migrations.InitialCreate",
+      "Summary": "<p sourcefile=\"api/RentACar.Data.Migrations.InitialCreate.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Data.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Data.Migrations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Data.Migrations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Data.Models.ApplicationUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Data.Models.ApplicationUser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Data.Models.ApplicationUser",
+      "Summary": "<p sourcefile=\"api/RentACar.Data.Models.ApplicationUser.yml\" sourcestartlinenumber=\"1\">Represents a user in the system, extending the default Identity user.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Data.Models.Car.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Data.Models.Car.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Data.Models.Car",
+      "Summary": "<p sourcefile=\"api/RentACar.Data.Models.Car.yml\" sourcestartlinenumber=\"1\">Represents a car available for rent in the system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Data.Models.Reservation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Data.Models.Reservation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Data.Models.Reservation",
+      "Summary": "<p sourcefile=\"api/RentACar.Data.Models.Reservation.yml\" sourcestartlinenumber=\"1\">Represents a reservation made by a user for a specific car.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Data.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Data.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Data.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Data.Seeding.DbSeeder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Data.Seeding.DbSeeder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Data.Seeding.DbSeeder",
+      "Summary": "<p sourcefile=\"api/RentACar.Data.Seeding.DbSeeder.yml\" sourcestartlinenumber=\"1\">Handles the initial seeding of roles and admin user in the database.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Data.Seeding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Data.Seeding.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Data.Seeding",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Services.Implementations.CarService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Services.Implementations.CarService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Services.Implementations.CarService",
+      "Summary": "<p sourcefile=\"api/RentACar.Services.Implementations.CarService.yml\" sourcestartlinenumber=\"1\">Service for managing car-related operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Services.Implementations.ReservationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Services.Implementations.ReservationService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Services.Implementations.ReservationService",
+      "Summary": "<p sourcefile=\"api/RentACar.Services.Implementations.ReservationService.yml\" sourcestartlinenumber=\"1\">Service for managing reservation-related operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Services.Implementations.UserService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Services.Implementations.UserService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Services.Implementations.UserService",
+      "Summary": "<p sourcefile=\"api/RentACar.Services.Implementations.UserService.yml\" sourcestartlinenumber=\"1\">Service for managing user-related operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Services.Implementations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Services.Implementations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Services.Implementations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Services.Interfaces.ICarService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Services.Interfaces.ICarService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Services.Interfaces.ICarService",
+      "Summary": "<p sourcefile=\"api/RentACar.Services.Interfaces.ICarService.yml\" sourcestartlinenumber=\"1\">Defines operations for managing cars in the system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Services.Interfaces.IReservationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Services.Interfaces.IReservationService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Services.Interfaces.IReservationService",
+      "Summary": "<p sourcefile=\"api/RentACar.Services.Interfaces.IReservationService.yml\" sourcestartlinenumber=\"1\">Defines operations for managing reservations in the system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Services.Interfaces.IUserService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Services.Interfaces.IUserService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Services.Interfaces.IUserService",
+      "Summary": "<p sourcefile=\"api/RentACar.Services.Interfaces.IUserService.yml\" sourcestartlinenumber=\"1\">Defines operations for managing users in the system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Services.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Services.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Services.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.Controllers.AccountController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.Controllers.AccountController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.Controllers.AccountController",
+      "Summary": "<p sourcefile=\"api/RentACar.Web.Controllers.AccountController.yml\" sourcestartlinenumber=\"1\">Handles user authentication including registration, login and logout.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.Controllers.CarsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.Controllers.CarsController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.Controllers.CarsController",
+      "Summary": "<p sourcefile=\"api/RentACar.Web.Controllers.CarsController.yml\" sourcestartlinenumber=\"1\">Handles car management including listing, creating, editing and deleting cars.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.Controllers.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.Controllers.HomeController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.Controllers.HomeController",
+      "Summary": "<p sourcefile=\"api/RentACar.Web.Controllers.HomeController.yml\" sourcestartlinenumber=\"1\">Handles the home page and general application navigation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.Controllers.ReservationsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.Controllers.ReservationsController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.Controllers.ReservationsController",
+      "Summary": "<p sourcefile=\"api/RentACar.Web.Controllers.ReservationsController.yml\" sourcestartlinenumber=\"1\">Handles reservation management including searching, creating and approving reservations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.Controllers.UsersController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.Controllers.UsersController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.Controllers.UsersController",
+      "Summary": "<p sourcefile=\"api/RentACar.Web.Controllers.UsersController.yml\" sourcestartlinenumber=\"1\">Handles user management. Accessible by Admin only.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.Models.ErrorViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.Models.ErrorViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.Models.ErrorViewModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.ViewModels.CreateReservationViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.ViewModels.CreateReservationViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.ViewModels.CreateReservationViewModel",
+      "Summary": "<p sourcefile=\"api/RentACar.Web.ViewModels.CreateReservationViewModel.yml\" sourcestartlinenumber=\"1\">ViewModel for creating a new reservation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.ViewModels.CreateUserViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.ViewModels.CreateUserViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.ViewModels.CreateUserViewModel",
+      "Summary": "<p sourcefile=\"api/RentACar.Web.ViewModels.CreateUserViewModel.yml\" sourcestartlinenumber=\"1\">ViewModel for creating a new user by an admin.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.ViewModels.LoginViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.ViewModels.LoginViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.ViewModels.LoginViewModel",
+      "Summary": "<p sourcefile=\"api/RentACar.Web.ViewModels.LoginViewModel.yml\" sourcestartlinenumber=\"1\">ViewModel for the user login form.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.ViewModels.RegisterViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.ViewModels.RegisterViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.ViewModels.RegisterViewModel",
+      "Summary": "<p sourcefile=\"api/RentACar.Web.ViewModels.RegisterViewModel.yml\" sourcestartlinenumber=\"1\">ViewModel for the user registration form.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.ViewModels.SearchCarsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.ViewModels.SearchCarsViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.ViewModels.SearchCarsViewModel",
+      "Summary": "<p sourcefile=\"api/RentACar.Web.ViewModels.SearchCarsViewModel.yml\" sourcestartlinenumber=\"1\">ViewModel for searching available cars by date range.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RentACar.Web.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RentACar.Web.ViewModels.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RentACar.Web.ViewModels",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

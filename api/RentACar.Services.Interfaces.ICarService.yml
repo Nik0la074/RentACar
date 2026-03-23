@@ -1,0 +1,545 @@
+### YamlMime:ManagedReference
+items:
+- uid: RentACar.Services.Interfaces.ICarService
+  commentId: T:RentACar.Services.Interfaces.ICarService
+  id: ICarService
+  parent: RentACar.Services.Interfaces
+  children:
+  - RentACar.Services.Interfaces.ICarService.Add(RentACar.Data.Models.Car)
+  - RentACar.Services.Interfaces.ICarService.Delete(System.Int32)
+  - RentACar.Services.Interfaces.ICarService.GetAll
+  - RentACar.Services.Interfaces.ICarService.GetAvailableCars(System.DateTime,System.DateTime)
+  - RentACar.Services.Interfaces.ICarService.GetBookedPeriods(System.Int32)
+  - RentACar.Services.Interfaces.ICarService.GetById(System.Int32)
+  - RentACar.Services.Interfaces.ICarService.Update(RentACar.Data.Models.Car)
+  langs:
+  - csharp
+  - vb
+  name: ICarService
+  nameWithType: ICarService
+  fullName: RentACar.Services.Interfaces.ICarService
+  type: Interface
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/ICarService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: ICarService
+    path: RentACar.Services/Interfaces/ICarService.cs
+    startLine: 7
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Defines operations for managing cars in the system.
+  example: []
+  syntax:
+    content: public interface ICarService
+    content.vb: Public Interface ICarService
+  derivedClasses:
+  - RentACar.Services.Implementations.CarService
+- uid: RentACar.Services.Interfaces.ICarService.GetAll
+  commentId: M:RentACar.Services.Interfaces.ICarService.GetAll
+  id: GetAll
+  parent: RentACar.Services.Interfaces.ICarService
+  langs:
+  - csharp
+  - vb
+  name: GetAll()
+  nameWithType: ICarService.GetAll()
+  fullName: RentACar.Services.Interfaces.ICarService.GetAll()
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/ICarService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: GetAll
+    path: RentACar.Services/Interfaces/ICarService.cs
+    startLine: 10
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Returns all cars.
+  example: []
+  syntax:
+    content: IEnumerable<Car> GetAll()
+    return:
+      type: System.Collections.Generic.IEnumerable{RentACar.Data.Models.Car}
+    content.vb: Function GetAll() As IEnumerable(Of Car)
+  overload: RentACar.Services.Interfaces.ICarService.GetAll*
+- uid: RentACar.Services.Interfaces.ICarService.GetById(System.Int32)
+  commentId: M:RentACar.Services.Interfaces.ICarService.GetById(System.Int32)
+  id: GetById(System.Int32)
+  parent: RentACar.Services.Interfaces.ICarService
+  langs:
+  - csharp
+  - vb
+  name: GetById(int)
+  nameWithType: ICarService.GetById(int)
+  fullName: RentACar.Services.Interfaces.ICarService.GetById(int)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/ICarService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: GetById
+    path: RentACar.Services/Interfaces/ICarService.cs
+    startLine: 13
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Returns a car by its ID, or null if not found.
+  example: []
+  syntax:
+    content: Car? GetById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: RentACar.Data.Models.Car
+    content.vb: Function GetById(id As Integer) As Car
+  overload: RentACar.Services.Interfaces.ICarService.GetById*
+  nameWithType.vb: ICarService.GetById(Integer)
+  fullName.vb: RentACar.Services.Interfaces.ICarService.GetById(Integer)
+  name.vb: GetById(Integer)
+- uid: RentACar.Services.Interfaces.ICarService.Add(RentACar.Data.Models.Car)
+  commentId: M:RentACar.Services.Interfaces.ICarService.Add(RentACar.Data.Models.Car)
+  id: Add(RentACar.Data.Models.Car)
+  parent: RentACar.Services.Interfaces.ICarService
+  langs:
+  - csharp
+  - vb
+  name: Add(Car)
+  nameWithType: ICarService.Add(Car)
+  fullName: RentACar.Services.Interfaces.ICarService.Add(RentACar.Data.Models.Car)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/ICarService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: Add
+    path: RentACar.Services/Interfaces/ICarService.cs
+    startLine: 16
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Adds a new car to the database.
+  example: []
+  syntax:
+    content: void Add(Car car)
+    parameters:
+    - id: car
+      type: RentACar.Data.Models.Car
+    content.vb: Sub Add(car As Car)
+  overload: RentACar.Services.Interfaces.ICarService.Add*
+- uid: RentACar.Services.Interfaces.ICarService.Update(RentACar.Data.Models.Car)
+  commentId: M:RentACar.Services.Interfaces.ICarService.Update(RentACar.Data.Models.Car)
+  id: Update(RentACar.Data.Models.Car)
+  parent: RentACar.Services.Interfaces.ICarService
+  langs:
+  - csharp
+  - vb
+  name: Update(Car)
+  nameWithType: ICarService.Update(Car)
+  fullName: RentACar.Services.Interfaces.ICarService.Update(RentACar.Data.Models.Car)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/ICarService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: Update
+    path: RentACar.Services/Interfaces/ICarService.cs
+    startLine: 19
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Updates an existing car in the database.
+  example: []
+  syntax:
+    content: void Update(Car car)
+    parameters:
+    - id: car
+      type: RentACar.Data.Models.Car
+    content.vb: Sub Update(car As Car)
+  overload: RentACar.Services.Interfaces.ICarService.Update*
+- uid: RentACar.Services.Interfaces.ICarService.Delete(System.Int32)
+  commentId: M:RentACar.Services.Interfaces.ICarService.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: RentACar.Services.Interfaces.ICarService
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: ICarService.Delete(int)
+  fullName: RentACar.Services.Interfaces.ICarService.Delete(int)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/ICarService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: Delete
+    path: RentACar.Services/Interfaces/ICarService.cs
+    startLine: 22
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Deletes a car by its ID.
+  example: []
+  syntax:
+    content: void Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    content.vb: Sub Delete(id As Integer)
+  overload: RentACar.Services.Interfaces.ICarService.Delete*
+  nameWithType.vb: ICarService.Delete(Integer)
+  fullName.vb: RentACar.Services.Interfaces.ICarService.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: RentACar.Services.Interfaces.ICarService.GetAvailableCars(System.DateTime,System.DateTime)
+  commentId: M:RentACar.Services.Interfaces.ICarService.GetAvailableCars(System.DateTime,System.DateTime)
+  id: GetAvailableCars(System.DateTime,System.DateTime)
+  parent: RentACar.Services.Interfaces.ICarService
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableCars(DateTime, DateTime)
+  nameWithType: ICarService.GetAvailableCars(DateTime, DateTime)
+  fullName: RentACar.Services.Interfaces.ICarService.GetAvailableCars(System.DateTime, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/ICarService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: GetAvailableCars
+    path: RentACar.Services/Interfaces/ICarService.cs
+    startLine: 25
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Returns all cars available for the given date range.
+  example: []
+  syntax:
+    content: IEnumerable<Car> GetAvailableCars(DateTime start, DateTime end)
+    parameters:
+    - id: start
+      type: System.DateTime
+    - id: end
+      type: System.DateTime
+    return:
+      type: System.Collections.Generic.IEnumerable{RentACar.Data.Models.Car}
+    content.vb: Function GetAvailableCars(start As Date, [end] As Date) As IEnumerable(Of Car)
+  overload: RentACar.Services.Interfaces.ICarService.GetAvailableCars*
+  nameWithType.vb: ICarService.GetAvailableCars(Date, Date)
+  fullName.vb: RentACar.Services.Interfaces.ICarService.GetAvailableCars(Date, Date)
+  name.vb: GetAvailableCars(Date, Date)
+- uid: RentACar.Services.Interfaces.ICarService.GetBookedPeriods(System.Int32)
+  commentId: M:RentACar.Services.Interfaces.ICarService.GetBookedPeriods(System.Int32)
+  id: GetBookedPeriods(System.Int32)
+  parent: RentACar.Services.Interfaces.ICarService
+  langs:
+  - csharp
+  - vb
+  name: GetBookedPeriods(int)
+  nameWithType: ICarService.GetBookedPeriods(int)
+  fullName: RentACar.Services.Interfaces.ICarService.GetBookedPeriods(int)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/ICarService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: GetBookedPeriods
+    path: RentACar.Services/Interfaces/ICarService.cs
+    startLine: 28
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Returns all booked periods for a specific car.
+  example: []
+  syntax:
+    content: IEnumerable<Reservation> GetBookedPeriods(int carId)
+    parameters:
+    - id: carId
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{RentACar.Data.Models.Reservation}
+    content.vb: Function GetBookedPeriods(carId As Integer) As IEnumerable(Of Reservation)
+  overload: RentACar.Services.Interfaces.ICarService.GetBookedPeriods*
+  nameWithType.vb: ICarService.GetBookedPeriods(Integer)
+  fullName.vb: RentACar.Services.Interfaces.ICarService.GetBookedPeriods(Integer)
+  name.vb: GetBookedPeriods(Integer)
+references:
+- uid: RentACar.Services.Interfaces
+  commentId: N:RentACar.Services.Interfaces
+  href: RentACar.html
+  name: RentACar.Services.Interfaces
+  nameWithType: RentACar.Services.Interfaces
+  fullName: RentACar.Services.Interfaces
+  spec.csharp:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Services
+    name: Services
+    href: RentACar.Services.html
+  - name: .
+  - uid: RentACar.Services.Interfaces
+    name: Interfaces
+    href: RentACar.Services.Interfaces.html
+  spec.vb:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Services
+    name: Services
+    href: RentACar.Services.html
+  - name: .
+  - uid: RentACar.Services.Interfaces
+    name: Interfaces
+    href: RentACar.Services.Interfaces.html
+- uid: RentACar.Services.Interfaces.ICarService.GetAll*
+  commentId: Overload:RentACar.Services.Interfaces.ICarService.GetAll
+  href: RentACar.Services.Interfaces.ICarService.html#RentACar_Services_Interfaces_ICarService_GetAll
+  name: GetAll
+  nameWithType: ICarService.GetAll
+  fullName: RentACar.Services.Interfaces.ICarService.GetAll
+- uid: System.Collections.Generic.IEnumerable{RentACar.Data.Models.Car}
+  commentId: T:System.Collections.Generic.IEnumerable{RentACar.Data.Models.Car}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Car>
+  nameWithType: IEnumerable<Car>
+  fullName: System.Collections.Generic.IEnumerable<RentACar.Data.Models.Car>
+  nameWithType.vb: IEnumerable(Of Car)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of RentACar.Data.Models.Car)
+  name.vb: IEnumerable(Of Car)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: RentACar.Data.Models.Car
+    name: Car
+    href: RentACar.Data.Models.Car.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: RentACar.Data.Models.Car
+    name: Car
+    href: RentACar.Data.Models.Car.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: RentACar.Services.Interfaces.ICarService.GetById*
+  commentId: Overload:RentACar.Services.Interfaces.ICarService.GetById
+  href: RentACar.Services.Interfaces.ICarService.html#RentACar_Services_Interfaces_ICarService_GetById_System_Int32_
+  name: GetById
+  nameWithType: ICarService.GetById
+  fullName: RentACar.Services.Interfaces.ICarService.GetById
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: RentACar.Data.Models.Car
+  commentId: T:RentACar.Data.Models.Car
+  parent: RentACar.Data.Models
+  href: RentACar.Data.Models.Car.html
+  name: Car
+  nameWithType: Car
+  fullName: RentACar.Data.Models.Car
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RentACar.Data.Models
+  commentId: N:RentACar.Data.Models
+  href: RentACar.html
+  name: RentACar.Data.Models
+  nameWithType: RentACar.Data.Models
+  fullName: RentACar.Data.Models
+  spec.csharp:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Data
+    name: Data
+    href: RentACar.Data.html
+  - name: .
+  - uid: RentACar.Data.Models
+    name: Models
+    href: RentACar.Data.Models.html
+  spec.vb:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Data
+    name: Data
+    href: RentACar.Data.html
+  - name: .
+  - uid: RentACar.Data.Models
+    name: Models
+    href: RentACar.Data.Models.html
+- uid: RentACar.Services.Interfaces.ICarService.Add*
+  commentId: Overload:RentACar.Services.Interfaces.ICarService.Add
+  href: RentACar.Services.Interfaces.ICarService.html#RentACar_Services_Interfaces_ICarService_Add_RentACar_Data_Models_Car_
+  name: Add
+  nameWithType: ICarService.Add
+  fullName: RentACar.Services.Interfaces.ICarService.Add
+- uid: RentACar.Services.Interfaces.ICarService.Update*
+  commentId: Overload:RentACar.Services.Interfaces.ICarService.Update
+  href: RentACar.Services.Interfaces.ICarService.html#RentACar_Services_Interfaces_ICarService_Update_RentACar_Data_Models_Car_
+  name: Update
+  nameWithType: ICarService.Update
+  fullName: RentACar.Services.Interfaces.ICarService.Update
+- uid: RentACar.Services.Interfaces.ICarService.Delete*
+  commentId: Overload:RentACar.Services.Interfaces.ICarService.Delete
+  href: RentACar.Services.Interfaces.ICarService.html#RentACar_Services_Interfaces_ICarService_Delete_System_Int32_
+  name: Delete
+  nameWithType: ICarService.Delete
+  fullName: RentACar.Services.Interfaces.ICarService.Delete
+- uid: RentACar.Services.Interfaces.ICarService.GetAvailableCars*
+  commentId: Overload:RentACar.Services.Interfaces.ICarService.GetAvailableCars
+  href: RentACar.Services.Interfaces.ICarService.html#RentACar_Services_Interfaces_ICarService_GetAvailableCars_System_DateTime_System_DateTime_
+  name: GetAvailableCars
+  nameWithType: ICarService.GetAvailableCars
+  fullName: RentACar.Services.Interfaces.ICarService.GetAvailableCars
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: RentACar.Services.Interfaces.ICarService.GetBookedPeriods*
+  commentId: Overload:RentACar.Services.Interfaces.ICarService.GetBookedPeriods
+  href: RentACar.Services.Interfaces.ICarService.html#RentACar_Services_Interfaces_ICarService_GetBookedPeriods_System_Int32_
+  name: GetBookedPeriods
+  nameWithType: ICarService.GetBookedPeriods
+  fullName: RentACar.Services.Interfaces.ICarService.GetBookedPeriods
+- uid: System.Collections.Generic.IEnumerable{RentACar.Data.Models.Reservation}
+  commentId: T:System.Collections.Generic.IEnumerable{RentACar.Data.Models.Reservation}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Reservation>
+  nameWithType: IEnumerable<Reservation>
+  fullName: System.Collections.Generic.IEnumerable<RentACar.Data.Models.Reservation>
+  nameWithType.vb: IEnumerable(Of Reservation)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of RentACar.Data.Models.Reservation)
+  name.vb: IEnumerable(Of Reservation)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: RentACar.Data.Models.Reservation
+    name: Reservation
+    href: RentACar.Data.Models.Reservation.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: RentACar.Data.Models.Reservation
+    name: Reservation
+    href: RentACar.Data.Models.Reservation.html
+  - name: )

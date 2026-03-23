@@ -1,0 +1,814 @@
+### YamlMime:ManagedReference
+items:
+- uid: RentACar.Web.ViewModels.CreateUserViewModel
+  commentId: T:RentACar.Web.ViewModels.CreateUserViewModel
+  id: CreateUserViewModel
+  parent: RentACar.Web.ViewModels
+  children:
+  - RentACar.Web.ViewModels.CreateUserViewModel.ConfirmPassword
+  - RentACar.Web.ViewModels.CreateUserViewModel.EGN
+  - RentACar.Web.ViewModels.CreateUserViewModel.Email
+  - RentACar.Web.ViewModels.CreateUserViewModel.FirstName
+  - RentACar.Web.ViewModels.CreateUserViewModel.LastName
+  - RentACar.Web.ViewModels.CreateUserViewModel.Password
+  - RentACar.Web.ViewModels.CreateUserViewModel.PhoneNumber
+  - RentACar.Web.ViewModels.CreateUserViewModel.UserName
+  langs:
+  - csharp
+  - vb
+  name: CreateUserViewModel
+  nameWithType: CreateUserViewModel
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel
+  type: Class
+  source:
+    remote:
+      path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: CreateUserViewModel
+    path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+    startLine: 7
+  assemblies:
+  - RentACar.Web
+  namespace: RentACar.Web.ViewModels
+  summary: ViewModel for creating a new user by an admin.
+  example: []
+  syntax:
+    content: public class CreateUserViewModel
+    content.vb: Public Class CreateUserViewModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.UserName
+  commentId: P:RentACar.Web.ViewModels.CreateUserViewModel.UserName
+  id: UserName
+  parent: RentACar.Web.ViewModels.CreateUserViewModel
+  langs:
+  - csharp
+  - vb
+  name: UserName
+  nameWithType: CreateUserViewModel.UserName
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.UserName
+  type: Property
+  source:
+    remote:
+      path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: UserName
+    path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+    startLine: 10
+  assemblies:
+  - RentACar.Web
+  namespace: RentACar.Web.ViewModels
+  summary: Unique username for the account.
+  example: []
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "Username is required")]
+
+      public string UserName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="Username is required")>
+
+      Public Property UserName As String
+  overload: RentACar.Web.ViewModels.CreateUserViewModel.UserName*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Username is required
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.FirstName
+  commentId: P:RentACar.Web.ViewModels.CreateUserViewModel.FirstName
+  id: FirstName
+  parent: RentACar.Web.ViewModels.CreateUserViewModel
+  langs:
+  - csharp
+  - vb
+  name: FirstName
+  nameWithType: CreateUserViewModel.FirstName
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.FirstName
+  type: Property
+  source:
+    remote:
+      path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: FirstName
+    path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+    startLine: 14
+  assemblies:
+  - RentACar.Web
+  namespace: RentACar.Web.ViewModels
+  summary: First name of the user.
+  example: []
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "First name is required")]
+
+      public string FirstName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="First name is required")>
+
+      Public Property FirstName As String
+  overload: RentACar.Web.ViewModels.CreateUserViewModel.FirstName*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: First name is required
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.LastName
+  commentId: P:RentACar.Web.ViewModels.CreateUserViewModel.LastName
+  id: LastName
+  parent: RentACar.Web.ViewModels.CreateUserViewModel
+  langs:
+  - csharp
+  - vb
+  name: LastName
+  nameWithType: CreateUserViewModel.LastName
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.LastName
+  type: Property
+  source:
+    remote:
+      path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: LastName
+    path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+    startLine: 18
+  assemblies:
+  - RentACar.Web
+  namespace: RentACar.Web.ViewModels
+  summary: Last name of the user.
+  example: []
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "Last name is required")]
+
+      public string LastName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="Last name is required")>
+
+      Public Property LastName As String
+  overload: RentACar.Web.ViewModels.CreateUserViewModel.LastName*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Last name is required
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.EGN
+  commentId: P:RentACar.Web.ViewModels.CreateUserViewModel.EGN
+  id: EGN
+  parent: RentACar.Web.ViewModels.CreateUserViewModel
+  langs:
+  - csharp
+  - vb
+  name: EGN
+  nameWithType: CreateUserViewModel.EGN
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.EGN
+  type: Property
+  source:
+    remote:
+      path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: EGN
+    path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+    startLine: 22
+  assemblies:
+  - RentACar.Web
+  namespace: RentACar.Web.ViewModels
+  summary: National identification number - must be exactly 10 digits.
+  example: []
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "EGN is required")]
+
+      [RegularExpression("^\\d{10}$", ErrorMessage = "EGN must contain exactly 10 digits")]
+
+      public string EGN { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="EGN is required")>
+
+      <RegularExpression("^\d{10}$", ErrorMessage:="EGN must contain exactly 10 digits")>
+
+      Public Property EGN As String
+  overload: RentACar.Web.ViewModels.CreateUserViewModel.EGN*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: EGN is required
+  - type: System.ComponentModel.DataAnnotations.RegularExpressionAttribute
+    ctor: System.ComponentModel.DataAnnotations.RegularExpressionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ^\d{10}$
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: EGN must contain exactly 10 digits
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.PhoneNumber
+  commentId: P:RentACar.Web.ViewModels.CreateUserViewModel.PhoneNumber
+  id: PhoneNumber
+  parent: RentACar.Web.ViewModels.CreateUserViewModel
+  langs:
+  - csharp
+  - vb
+  name: PhoneNumber
+  nameWithType: CreateUserViewModel.PhoneNumber
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.PhoneNumber
+  type: Property
+  source:
+    remote:
+      path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: PhoneNumber
+    path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+    startLine: 27
+  assemblies:
+  - RentACar.Web
+  namespace: RentACar.Web.ViewModels
+  summary: Phone number of the user.
+  example: []
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "Phone number is required")]
+
+      [Phone(ErrorMessage = "Invalid phone number")]
+
+      public string PhoneNumber { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="Phone number is required")>
+
+      <Phone(ErrorMessage:="Invalid phone number")>
+
+      Public Property PhoneNumber As String
+  overload: RentACar.Web.ViewModels.CreateUserViewModel.PhoneNumber*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Phone number is required
+  - type: System.ComponentModel.DataAnnotations.PhoneAttribute
+    ctor: System.ComponentModel.DataAnnotations.PhoneAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Invalid phone number
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.Email
+  commentId: P:RentACar.Web.ViewModels.CreateUserViewModel.Email
+  id: Email
+  parent: RentACar.Web.ViewModels.CreateUserViewModel
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: CreateUserViewModel.Email
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.Email
+  type: Property
+  source:
+    remote:
+      path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: Email
+    path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+    startLine: 32
+  assemblies:
+  - RentACar.Web
+  namespace: RentACar.Web.ViewModels
+  summary: Email address of the user.
+  example: []
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "Email is required")]
+
+      [EmailAddress(ErrorMessage = "Invalid email address")]
+
+      public string Email { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="Email is required")>
+
+      <EmailAddress(ErrorMessage:="Invalid email address")>
+
+      Public Property Email As String
+  overload: RentACar.Web.ViewModels.CreateUserViewModel.Email*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Email is required
+  - type: System.ComponentModel.DataAnnotations.EmailAddressAttribute
+    ctor: System.ComponentModel.DataAnnotations.EmailAddressAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Invalid email address
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.Password
+  commentId: P:RentACar.Web.ViewModels.CreateUserViewModel.Password
+  id: Password
+  parent: RentACar.Web.ViewModels.CreateUserViewModel
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: CreateUserViewModel.Password
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.Password
+  type: Property
+  source:
+    remote:
+      path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: Password
+    path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+    startLine: 37
+  assemblies:
+  - RentACar.Web
+  namespace: RentACar.Web.ViewModels
+  summary: Password for the account - minimum 6 characters.
+  example: []
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "Password is required")]
+
+      [MinLength(6, ErrorMessage = "Password must be at least 6 characters")]
+
+      [DataType(DataType.Password)]
+
+      public string Password { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="Password is required")>
+
+      <MinLength(6, ErrorMessage:="Password must be at least 6 characters")>
+
+      <DataType(DataType.Password)>
+
+      Public Property Password As String
+  overload: RentACar.Web.ViewModels.CreateUserViewModel.Password*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Password is required
+  - type: System.ComponentModel.DataAnnotations.MinLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.MinLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 6
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Password must be at least 6 characters
+  - type: System.ComponentModel.DataAnnotations.DataTypeAttribute
+    ctor: System.ComponentModel.DataAnnotations.DataTypeAttribute.#ctor(System.ComponentModel.DataAnnotations.DataType)
+    arguments:
+    - type: System.ComponentModel.DataAnnotations.DataType
+      value: 11
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.ConfirmPassword
+  commentId: P:RentACar.Web.ViewModels.CreateUserViewModel.ConfirmPassword
+  id: ConfirmPassword
+  parent: RentACar.Web.ViewModels.CreateUserViewModel
+  langs:
+  - csharp
+  - vb
+  name: ConfirmPassword
+  nameWithType: CreateUserViewModel.ConfirmPassword
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.ConfirmPassword
+  type: Property
+  source:
+    remote:
+      path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: ConfirmPassword
+    path: RentACar.Web/ViewModels/CreateUserViewModel.cs
+    startLine: 43
+  assemblies:
+  - RentACar.Web
+  namespace: RentACar.Web.ViewModels
+  summary: Must match the Password field.
+  example: []
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "Password confirmation is required")]
+
+      [DataType(DataType.Password)]
+
+      [Compare("Password", ErrorMessage = "Passwords do not match")]
+
+      public string ConfirmPassword { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="Password confirmation is required")>
+
+      <DataType(DataType.Password)>
+
+      <Compare("Password", ErrorMessage:="Passwords do not match")>
+
+      Public Property ConfirmPassword As String
+  overload: RentACar.Web.ViewModels.CreateUserViewModel.ConfirmPassword*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Password confirmation is required
+  - type: System.ComponentModel.DataAnnotations.DataTypeAttribute
+    ctor: System.ComponentModel.DataAnnotations.DataTypeAttribute.#ctor(System.ComponentModel.DataAnnotations.DataType)
+    arguments:
+    - type: System.ComponentModel.DataAnnotations.DataType
+      value: 11
+  - type: System.ComponentModel.DataAnnotations.CompareAttribute
+    ctor: System.ComponentModel.DataAnnotations.CompareAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Password
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Passwords do not match
+references:
+- uid: RentACar.Web.ViewModels
+  commentId: N:RentACar.Web.ViewModels
+  href: RentACar.html
+  name: RentACar.Web.ViewModels
+  nameWithType: RentACar.Web.ViewModels
+  fullName: RentACar.Web.ViewModels
+  spec.csharp:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Web
+    name: Web
+    href: RentACar.Web.html
+  - name: .
+  - uid: RentACar.Web.ViewModels
+    name: ViewModels
+    href: RentACar.Web.ViewModels.html
+  spec.vb:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Web
+    name: Web
+    href: RentACar.Web.html
+  - name: .
+  - uid: RentACar.Web.ViewModels
+    name: ViewModels
+    href: RentACar.Web.ViewModels.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.UserName*
+  commentId: Overload:RentACar.Web.ViewModels.CreateUserViewModel.UserName
+  href: RentACar.Web.ViewModels.CreateUserViewModel.html#RentACar_Web_ViewModels_CreateUserViewModel_UserName
+  name: UserName
+  nameWithType: CreateUserViewModel.UserName
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.UserName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.FirstName*
+  commentId: Overload:RentACar.Web.ViewModels.CreateUserViewModel.FirstName
+  href: RentACar.Web.ViewModels.CreateUserViewModel.html#RentACar_Web_ViewModels_CreateUserViewModel_FirstName
+  name: FirstName
+  nameWithType: CreateUserViewModel.FirstName
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.FirstName
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.LastName*
+  commentId: Overload:RentACar.Web.ViewModels.CreateUserViewModel.LastName
+  href: RentACar.Web.ViewModels.CreateUserViewModel.html#RentACar_Web_ViewModels_CreateUserViewModel_LastName
+  name: LastName
+  nameWithType: CreateUserViewModel.LastName
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.LastName
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.EGN*
+  commentId: Overload:RentACar.Web.ViewModels.CreateUserViewModel.EGN
+  href: RentACar.Web.ViewModels.CreateUserViewModel.html#RentACar_Web_ViewModels_CreateUserViewModel_EGN
+  name: EGN
+  nameWithType: CreateUserViewModel.EGN
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.EGN
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.PhoneNumber*
+  commentId: Overload:RentACar.Web.ViewModels.CreateUserViewModel.PhoneNumber
+  href: RentACar.Web.ViewModels.CreateUserViewModel.html#RentACar_Web_ViewModels_CreateUserViewModel_PhoneNumber
+  name: PhoneNumber
+  nameWithType: CreateUserViewModel.PhoneNumber
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.PhoneNumber
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.Email*
+  commentId: Overload:RentACar.Web.ViewModels.CreateUserViewModel.Email
+  href: RentACar.Web.ViewModels.CreateUserViewModel.html#RentACar_Web_ViewModels_CreateUserViewModel_Email
+  name: Email
+  nameWithType: CreateUserViewModel.Email
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.Email
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.Password*
+  commentId: Overload:RentACar.Web.ViewModels.CreateUserViewModel.Password
+  href: RentACar.Web.ViewModels.CreateUserViewModel.html#RentACar_Web_ViewModels_CreateUserViewModel_Password
+  name: Password
+  nameWithType: CreateUserViewModel.Password
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.Password
+- uid: RentACar.Web.ViewModels.CreateUserViewModel.ConfirmPassword*
+  commentId: Overload:RentACar.Web.ViewModels.CreateUserViewModel.ConfirmPassword
+  href: RentACar.Web.ViewModels.CreateUserViewModel.html#RentACar_Web_ViewModels_CreateUserViewModel_ConfirmPassword
+  name: ConfirmPassword
+  nameWithType: CreateUserViewModel.ConfirmPassword
+  fullName: RentACar.Web.ViewModels.CreateUserViewModel.ConfirmPassword

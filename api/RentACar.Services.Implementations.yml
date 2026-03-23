@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: RentACar.Services.Implementations
+  commentId: N:RentACar.Services.Implementations
+  id: RentACar.Services.Implementations
+  children:
+  - RentACar.Services.Implementations.CarService
+  - RentACar.Services.Implementations.ReservationService
+  - RentACar.Services.Implementations.UserService
+  langs:
+  - csharp
+  - vb
+  name: RentACar.Services.Implementations
+  nameWithType: RentACar.Services.Implementations
+  fullName: RentACar.Services.Implementations
+  type: Namespace
+  assemblies:
+  - RentACar.Services
+references:
+- uid: RentACar.Services.Implementations.CarService
+  commentId: T:RentACar.Services.Implementations.CarService
+  href: RentACar.Services.Implementations.CarService.html
+  name: CarService
+  nameWithType: CarService
+  fullName: RentACar.Services.Implementations.CarService
+- uid: RentACar.Services.Implementations.ReservationService
+  commentId: T:RentACar.Services.Implementations.ReservationService
+  href: RentACar.Services.Implementations.ReservationService.html
+  name: ReservationService
+  nameWithType: ReservationService
+  fullName: RentACar.Services.Implementations.ReservationService
+- uid: RentACar.Services.Implementations.UserService
+  commentId: T:RentACar.Services.Implementations.UserService
+  href: RentACar.Services.Implementations.UserService.html
+  name: UserService
+  nameWithType: UserService
+  fullName: RentACar.Services.Implementations.UserService

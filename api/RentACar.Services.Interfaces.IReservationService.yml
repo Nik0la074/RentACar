@@ -1,0 +1,470 @@
+### YamlMime:ManagedReference
+items:
+- uid: RentACar.Services.Interfaces.IReservationService
+  commentId: T:RentACar.Services.Interfaces.IReservationService
+  id: IReservationService
+  parent: RentACar.Services.Interfaces
+  children:
+  - RentACar.Services.Interfaces.IReservationService.Approve(System.Int32)
+  - RentACar.Services.Interfaces.IReservationService.Create(RentACar.Data.Models.Reservation)
+  - RentACar.Services.Interfaces.IReservationService.Delete(System.Int32)
+  - RentACar.Services.Interfaces.IReservationService.GetAll
+  - RentACar.Services.Interfaces.IReservationService.GetById(System.Int32)
+  - RentACar.Services.Interfaces.IReservationService.GetByUser(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IReservationService
+  nameWithType: IReservationService
+  fullName: RentACar.Services.Interfaces.IReservationService
+  type: Interface
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/IReservationService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: IReservationService
+    path: RentACar.Services/Interfaces/IReservationService.cs
+    startLine: 7
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Defines operations for managing reservations in the system.
+  example: []
+  syntax:
+    content: public interface IReservationService
+    content.vb: Public Interface IReservationService
+  derivedClasses:
+  - RentACar.Services.Implementations.ReservationService
+- uid: RentACar.Services.Interfaces.IReservationService.GetAll
+  commentId: M:RentACar.Services.Interfaces.IReservationService.GetAll
+  id: GetAll
+  parent: RentACar.Services.Interfaces.IReservationService
+  langs:
+  - csharp
+  - vb
+  name: GetAll()
+  nameWithType: IReservationService.GetAll()
+  fullName: RentACar.Services.Interfaces.IReservationService.GetAll()
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/IReservationService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: GetAll
+    path: RentACar.Services/Interfaces/IReservationService.cs
+    startLine: 10
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Returns all reservations.
+  example: []
+  syntax:
+    content: IEnumerable<Reservation> GetAll()
+    return:
+      type: System.Collections.Generic.IEnumerable{RentACar.Data.Models.Reservation}
+    content.vb: Function GetAll() As IEnumerable(Of Reservation)
+  overload: RentACar.Services.Interfaces.IReservationService.GetAll*
+- uid: RentACar.Services.Interfaces.IReservationService.GetByUser(System.String)
+  commentId: M:RentACar.Services.Interfaces.IReservationService.GetByUser(System.String)
+  id: GetByUser(System.String)
+  parent: RentACar.Services.Interfaces.IReservationService
+  langs:
+  - csharp
+  - vb
+  name: GetByUser(string)
+  nameWithType: IReservationService.GetByUser(string)
+  fullName: RentACar.Services.Interfaces.IReservationService.GetByUser(string)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/IReservationService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: GetByUser
+    path: RentACar.Services/Interfaces/IReservationService.cs
+    startLine: 13
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Returns all reservations made by a specific user.
+  example: []
+  syntax:
+    content: IEnumerable<Reservation> GetByUser(string userId)
+    parameters:
+    - id: userId
+      type: System.String
+    return:
+      type: System.Collections.Generic.IEnumerable{RentACar.Data.Models.Reservation}
+    content.vb: Function GetByUser(userId As String) As IEnumerable(Of Reservation)
+  overload: RentACar.Services.Interfaces.IReservationService.GetByUser*
+  nameWithType.vb: IReservationService.GetByUser(String)
+  fullName.vb: RentACar.Services.Interfaces.IReservationService.GetByUser(String)
+  name.vb: GetByUser(String)
+- uid: RentACar.Services.Interfaces.IReservationService.GetById(System.Int32)
+  commentId: M:RentACar.Services.Interfaces.IReservationService.GetById(System.Int32)
+  id: GetById(System.Int32)
+  parent: RentACar.Services.Interfaces.IReservationService
+  langs:
+  - csharp
+  - vb
+  name: GetById(int)
+  nameWithType: IReservationService.GetById(int)
+  fullName: RentACar.Services.Interfaces.IReservationService.GetById(int)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/IReservationService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: GetById
+    path: RentACar.Services/Interfaces/IReservationService.cs
+    startLine: 16
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Returns a reservation by its ID, or null if not found.
+  example: []
+  syntax:
+    content: Reservation? GetById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: RentACar.Data.Models.Reservation
+    content.vb: Function GetById(id As Integer) As Reservation
+  overload: RentACar.Services.Interfaces.IReservationService.GetById*
+  nameWithType.vb: IReservationService.GetById(Integer)
+  fullName.vb: RentACar.Services.Interfaces.IReservationService.GetById(Integer)
+  name.vb: GetById(Integer)
+- uid: RentACar.Services.Interfaces.IReservationService.Create(RentACar.Data.Models.Reservation)
+  commentId: M:RentACar.Services.Interfaces.IReservationService.Create(RentACar.Data.Models.Reservation)
+  id: Create(RentACar.Data.Models.Reservation)
+  parent: RentACar.Services.Interfaces.IReservationService
+  langs:
+  - csharp
+  - vb
+  name: Create(Reservation)
+  nameWithType: IReservationService.Create(Reservation)
+  fullName: RentACar.Services.Interfaces.IReservationService.Create(RentACar.Data.Models.Reservation)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/IReservationService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: Create
+    path: RentACar.Services/Interfaces/IReservationService.cs
+    startLine: 19
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Creates a new reservation.
+  example: []
+  syntax:
+    content: void Create(Reservation reservation)
+    parameters:
+    - id: reservation
+      type: RentACar.Data.Models.Reservation
+    content.vb: Sub Create(reservation As Reservation)
+  overload: RentACar.Services.Interfaces.IReservationService.Create*
+- uid: RentACar.Services.Interfaces.IReservationService.Approve(System.Int32)
+  commentId: M:RentACar.Services.Interfaces.IReservationService.Approve(System.Int32)
+  id: Approve(System.Int32)
+  parent: RentACar.Services.Interfaces.IReservationService
+  langs:
+  - csharp
+  - vb
+  name: Approve(int)
+  nameWithType: IReservationService.Approve(int)
+  fullName: RentACar.Services.Interfaces.IReservationService.Approve(int)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/IReservationService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: Approve
+    path: RentACar.Services/Interfaces/IReservationService.cs
+    startLine: 22
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Approves a reservation by its ID.
+  example: []
+  syntax:
+    content: void Approve(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    content.vb: Sub Approve(id As Integer)
+  overload: RentACar.Services.Interfaces.IReservationService.Approve*
+  nameWithType.vb: IReservationService.Approve(Integer)
+  fullName.vb: RentACar.Services.Interfaces.IReservationService.Approve(Integer)
+  name.vb: Approve(Integer)
+- uid: RentACar.Services.Interfaces.IReservationService.Delete(System.Int32)
+  commentId: M:RentACar.Services.Interfaces.IReservationService.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: RentACar.Services.Interfaces.IReservationService
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: IReservationService.Delete(int)
+  fullName: RentACar.Services.Interfaces.IReservationService.Delete(int)
+  type: Method
+  source:
+    remote:
+      path: RentACar.Services/Interfaces/IReservationService.cs
+      branch: main
+      repo: https://github.com/Nik0la074/RentACar
+    id: Delete
+    path: RentACar.Services/Interfaces/IReservationService.cs
+    startLine: 25
+  assemblies:
+  - RentACar.Services
+  namespace: RentACar.Services.Interfaces
+  summary: Deletes a reservation by its ID.
+  example: []
+  syntax:
+    content: void Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    content.vb: Sub Delete(id As Integer)
+  overload: RentACar.Services.Interfaces.IReservationService.Delete*
+  nameWithType.vb: IReservationService.Delete(Integer)
+  fullName.vb: RentACar.Services.Interfaces.IReservationService.Delete(Integer)
+  name.vb: Delete(Integer)
+references:
+- uid: RentACar.Services.Interfaces
+  commentId: N:RentACar.Services.Interfaces
+  href: RentACar.html
+  name: RentACar.Services.Interfaces
+  nameWithType: RentACar.Services.Interfaces
+  fullName: RentACar.Services.Interfaces
+  spec.csharp:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Services
+    name: Services
+    href: RentACar.Services.html
+  - name: .
+  - uid: RentACar.Services.Interfaces
+    name: Interfaces
+    href: RentACar.Services.Interfaces.html
+  spec.vb:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Services
+    name: Services
+    href: RentACar.Services.html
+  - name: .
+  - uid: RentACar.Services.Interfaces
+    name: Interfaces
+    href: RentACar.Services.Interfaces.html
+- uid: RentACar.Services.Interfaces.IReservationService.GetAll*
+  commentId: Overload:RentACar.Services.Interfaces.IReservationService.GetAll
+  href: RentACar.Services.Interfaces.IReservationService.html#RentACar_Services_Interfaces_IReservationService_GetAll
+  name: GetAll
+  nameWithType: IReservationService.GetAll
+  fullName: RentACar.Services.Interfaces.IReservationService.GetAll
+- uid: System.Collections.Generic.IEnumerable{RentACar.Data.Models.Reservation}
+  commentId: T:System.Collections.Generic.IEnumerable{RentACar.Data.Models.Reservation}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Reservation>
+  nameWithType: IEnumerable<Reservation>
+  fullName: System.Collections.Generic.IEnumerable<RentACar.Data.Models.Reservation>
+  nameWithType.vb: IEnumerable(Of Reservation)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of RentACar.Data.Models.Reservation)
+  name.vb: IEnumerable(Of Reservation)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: RentACar.Data.Models.Reservation
+    name: Reservation
+    href: RentACar.Data.Models.Reservation.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: RentACar.Data.Models.Reservation
+    name: Reservation
+    href: RentACar.Data.Models.Reservation.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: RentACar.Services.Interfaces.IReservationService.GetByUser*
+  commentId: Overload:RentACar.Services.Interfaces.IReservationService.GetByUser
+  href: RentACar.Services.Interfaces.IReservationService.html#RentACar_Services_Interfaces_IReservationService_GetByUser_System_String_
+  name: GetByUser
+  nameWithType: IReservationService.GetByUser
+  fullName: RentACar.Services.Interfaces.IReservationService.GetByUser
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RentACar.Services.Interfaces.IReservationService.GetById*
+  commentId: Overload:RentACar.Services.Interfaces.IReservationService.GetById
+  href: RentACar.Services.Interfaces.IReservationService.html#RentACar_Services_Interfaces_IReservationService_GetById_System_Int32_
+  name: GetById
+  nameWithType: IReservationService.GetById
+  fullName: RentACar.Services.Interfaces.IReservationService.GetById
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: RentACar.Data.Models.Reservation
+  commentId: T:RentACar.Data.Models.Reservation
+  parent: RentACar.Data.Models
+  href: RentACar.Data.Models.Reservation.html
+  name: Reservation
+  nameWithType: Reservation
+  fullName: RentACar.Data.Models.Reservation
+- uid: RentACar.Data.Models
+  commentId: N:RentACar.Data.Models
+  href: RentACar.html
+  name: RentACar.Data.Models
+  nameWithType: RentACar.Data.Models
+  fullName: RentACar.Data.Models
+  spec.csharp:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Data
+    name: Data
+    href: RentACar.Data.html
+  - name: .
+  - uid: RentACar.Data.Models
+    name: Models
+    href: RentACar.Data.Models.html
+  spec.vb:
+  - uid: RentACar
+    name: RentACar
+    href: RentACar.html
+  - name: .
+  - uid: RentACar.Data
+    name: Data
+    href: RentACar.Data.html
+  - name: .
+  - uid: RentACar.Data.Models
+    name: Models
+    href: RentACar.Data.Models.html
+- uid: RentACar.Services.Interfaces.IReservationService.Create*
+  commentId: Overload:RentACar.Services.Interfaces.IReservationService.Create
+  href: RentACar.Services.Interfaces.IReservationService.html#RentACar_Services_Interfaces_IReservationService_Create_RentACar_Data_Models_Reservation_
+  name: Create
+  nameWithType: IReservationService.Create
+  fullName: RentACar.Services.Interfaces.IReservationService.Create
+- uid: RentACar.Services.Interfaces.IReservationService.Approve*
+  commentId: Overload:RentACar.Services.Interfaces.IReservationService.Approve
+  href: RentACar.Services.Interfaces.IReservationService.html#RentACar_Services_Interfaces_IReservationService_Approve_System_Int32_
+  name: Approve
+  nameWithType: IReservationService.Approve
+  fullName: RentACar.Services.Interfaces.IReservationService.Approve
+- uid: RentACar.Services.Interfaces.IReservationService.Delete*
+  commentId: Overload:RentACar.Services.Interfaces.IReservationService.Delete
+  href: RentACar.Services.Interfaces.IReservationService.html#RentACar_Services_Interfaces_IReservationService_Delete_System_Int32_
+  name: Delete
+  nameWithType: IReservationService.Delete
+  fullName: RentACar.Services.Interfaces.IReservationService.Delete

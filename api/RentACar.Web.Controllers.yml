@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: RentACar.Web.Controllers
+  commentId: N:RentACar.Web.Controllers
+  id: RentACar.Web.Controllers
+  children:
+  - RentACar.Web.Controllers.AccountController
+  - RentACar.Web.Controllers.CarsController
+  - RentACar.Web.Controllers.HomeController
+  - RentACar.Web.Controllers.ReservationsController
+  - RentACar.Web.Controllers.UsersController
+  langs:
+  - csharp
+  - vb
+  name: RentACar.Web.Controllers
+  nameWithType: RentACar.Web.Controllers
+  fullName: RentACar.Web.Controllers
+  type: Namespace
+  assemblies:
+  - RentACar.Web
+references:
+- uid: RentACar.Web.Controllers.AccountController
+  commentId: T:RentACar.Web.Controllers.AccountController
+  href: RentACar.Web.Controllers.AccountController.html
+  name: AccountController
+  nameWithType: AccountController
+  fullName: RentACar.Web.Controllers.AccountController
+- uid: RentACar.Web.Controllers.CarsController
+  commentId: T:RentACar.Web.Controllers.CarsController
+  href: RentACar.Web.Controllers.CarsController.html
+  name: CarsController
+  nameWithType: CarsController
+  fullName: RentACar.Web.Controllers.CarsController
+- uid: RentACar.Web.Controllers.HomeController
+  commentId: T:RentACar.Web.Controllers.HomeController
+  href: RentACar.Web.Controllers.HomeController.html
+  name: HomeController
+  nameWithType: HomeController
+  fullName: RentACar.Web.Controllers.HomeController
+- uid: RentACar.Web.Controllers.ReservationsController
+  commentId: T:RentACar.Web.Controllers.ReservationsController
+  href: RentACar.Web.Controllers.ReservationsController.html
+  name: ReservationsController
+  nameWithType: ReservationsController
+  fullName: RentACar.Web.Controllers.ReservationsController
+- uid: RentACar.Web.Controllers.UsersController
+  commentId: T:RentACar.Web.Controllers.UsersController
+  href: RentACar.Web.Controllers.UsersController.html
+  name: UsersController
+  nameWithType: UsersController
+  fullName: RentACar.Web.Controllers.UsersController

@@ -1,0 +1,108 @@
+### YamlMime:TableOfContent
+items:
+- uid: RentACar.Data
+  name: RentACar.Data
+  type: Namespace
+  items:
+  - uid: RentACar.Data.AppDbContext
+    name: AppDbContext
+    type: Class
+- uid: RentACar.Data.Migrations
+  name: RentACar.Data.Migrations
+  type: Namespace
+  items:
+  - uid: RentACar.Data.Migrations.InitialCreate
+    name: InitialCreate
+    type: Class
+- uid: RentACar.Data.Models
+  name: RentACar.Data.Models
+  type: Namespace
+  items:
+  - uid: RentACar.Data.Models.ApplicationUser
+    name: ApplicationUser
+    type: Class
+  - uid: RentACar.Data.Models.Car
+    name: Car
+    type: Class
+  - uid: RentACar.Data.Models.Reservation
+    name: Reservation
+    type: Class
+- uid: RentACar.Data.Seeding
+  name: RentACar.Data.Seeding
+  type: Namespace
+  items:
+  - uid: RentACar.Data.Seeding.DbSeeder
+    name: DbSeeder
+    type: Class
+- uid: RentACar.Services.Implementations
+  name: RentACar.Services.Implementations
+  type: Namespace
+  items:
+  - uid: RentACar.Services.Implementations.CarService
+    name: CarService
+    type: Class
+  - uid: RentACar.Services.Implementations.ReservationService
+    name: ReservationService
+    type: Class
+  - uid: RentACar.Services.Implementations.UserService
+    name: UserService
+    type: Class
+- uid: RentACar.Services.Interfaces
+  name: RentACar.Services.Interfaces
+  type: Namespace
+  items:
+  - uid: RentACar.Services.Interfaces.ICarService
+    name: ICarService
+    type: Interface
+  - uid: RentACar.Services.Interfaces.IReservationService
+    name: IReservationService
+    type: Interface
+  - uid: RentACar.Services.Interfaces.IUserService
+    name: IUserService
+    type: Interface
+- uid: RentACar.Web.Controllers
+  name: RentACar.Web.Controllers
+  type: Namespace
+  items:
+  - uid: RentACar.Web.Controllers.AccountController
+    name: AccountController
+    type: Class
+  - uid: RentACar.Web.Controllers.CarsController
+    name: CarsController
+    type: Class
+  - uid: RentACar.Web.Controllers.HomeController
+    name: HomeController
+    type: Class
+  - uid: RentACar.Web.Controllers.ReservationsController
+    name: ReservationsController
+    type: Class
+  - uid: RentACar.Web.Controllers.UsersController
+    name: UsersController
+    type: Class
+- uid: RentACar.Web.Models
+  name: RentACar.Web.Models
+  type: Namespace
+  items:
+  - uid: RentACar.Web.Models.ErrorViewModel
+    name: ErrorViewModel
+    type: Class
+- uid: RentACar.Web.ViewModels
+  name: RentACar.Web.ViewModels
+  type: Namespace
+  items:
+  - uid: RentACar.Web.ViewModels.CreateReservationViewModel
+    name: CreateReservationViewModel
+    type: Class
+  - uid: RentACar.Web.ViewModels.CreateUserViewModel
+    name: CreateUserViewModel
+    type: Class
+  - uid: RentACar.Web.ViewModels.LoginViewModel
+    name: LoginViewModel
+    type: Class
+  - uid: RentACar.Web.ViewModels.RegisterViewModel
+    name: RegisterViewModel
+    type: Class
+  - uid: RentACar.Web.ViewModels.SearchCarsViewModel
+    name: SearchCarsViewModel
+    type: Class
+memberLayout: SamePage
