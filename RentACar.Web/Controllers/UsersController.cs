@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RentACar.Data.Models;
 using RentACar.Services.Interfaces;
+using RentACar.Web.ViewModels;
 
 namespace RentACar.Web.Controllers
 {
@@ -28,6 +29,42 @@ namespace RentACar.Web.Controllers
         {
             var users = _userService.GetAll();
             return View(users);
+        }
+
+        /// <summary>Displays the form for creating a new user. Admin only.</summary>
+        [HttpGet]
+        public IActionResult Create() => View();
+
+        /// <summary>Processes the form and creates a new user. Admin only.</summary>
+        [HttpPost]
+        public async Task<IActionResult> Create(CreateUserViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var user = new ApplicationUser
+            {
+                UserName = model.UserName,
+                Email = model.Email,
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                EGN = model.EGN,
+                PhoneNumber = model.PhoneNumber,
+                EmailConfirmed = true
+            };
+
+            var result = await _userManager.CreateAsync(user, model.Password);
+
+            if (result.Succeeded)
+            {
+                await _userManager.AddToRoleAsync(user, "User");
+                return RedirectToAction(nameof(Index));
+            }
+
+            foreach (var error in result.Errors)
+                ModelState.AddModelError(string.Empty, error.Description);
+
+            return View(model);
         }
 
         /// <summary>Displays the form for editing a user. Admin only.</summary>

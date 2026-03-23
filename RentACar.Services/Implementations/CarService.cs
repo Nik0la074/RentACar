@@ -62,5 +62,11 @@ namespace RentACar.Services.Implementations
                     r.StartDate < end &&
                     r.EndDate > start))
                 .ToList();
+
+        /// <summary>Returns all approved reservations for a specific car.</summary>
+        public IEnumerable<Reservation> GetBookedPeriods(int carId)
+            => _db.Reservations
+                .Where(r => r.CarId == carId && r.IsApproved)
+                .ToList();
     }
 }

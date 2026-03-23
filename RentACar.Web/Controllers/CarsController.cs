@@ -79,5 +79,18 @@ namespace RentACar.Web.Controllers
             _carService.Delete(id);
             return RedirectToAction(nameof(Index));
         }
+
+        /// <summary>Displays the booked periods for a specific car.</summary>
+        [Authorize]
+        public IActionResult Schedule(int id)
+        {
+            var car = _carService.GetById(id);
+            if (car == null) return NotFound();
+
+            var bookedPeriods = _carService.GetBookedPeriods(id);
+
+            ViewBag.Car = car;
+            return View(bookedPeriods);
+        }
     }
 }

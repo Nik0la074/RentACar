@@ -24,5 +24,8 @@ namespace RentACar.Services.Interfaces
 
         /// <summary>Returns all cars available for the given date range.</summary>
         IEnumerable<Car> GetAvailableCars(DateTime start, DateTime end);
+
+        /// <summary>Returns all booked periods for a specific car.</summary>
+        IEnumerable<Reservation> GetBookedPeriods(int carId);
     }
 }

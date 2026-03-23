@@ -1,0 +1,39 @@
+﻿@model IEnumerable<RentACar.Data.Models.Reservation>
+
+@{
+    ViewData["Title"] = "Car Schedule";
+    var car = ViewBag.Car as RentACar.Data.Models.Car;
+}
+
+<h2>Schedule for @car!.Brand @car.Model (@car.Year)</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-success mt-3">
+        This car is available for all dates.
+    </div>
+}
+else
+{
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reservation in Model)
+            {
+                <tr>
+                    <td>@reservation.StartDate.ToString("dd/MM/yyyy")</td>
+                    <td>@reservation.EndDate.ToString("dd/MM/yyyy")</td>
+                    <td><span class="badge bg-danger">Booked</span></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<a asp-action="Index" class="btn btn-secondary mt-3">Back to Cars</a>

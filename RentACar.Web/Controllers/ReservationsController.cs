@@ -55,6 +55,13 @@ namespace RentACar.Web.Controllers
             if (!ModelState.IsValid)
                 return View("Create", model);
 
+            // Prevent reservations with past dates
+            if (model.StartDate < DateTime.Today)
+            {
+                ModelState.AddModelError(string.Empty, "Start date cannot be in the past");
+                return View("Create", model);
+            }
+
             if (model.EndDate <= model.StartDate)
             {
                 ModelState.AddModelError(string.Empty, "End date must be after start date");

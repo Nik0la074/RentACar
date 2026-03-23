@@ -20,6 +20,7 @@
             <th>Seats</th>
             <th>Price/Day</th>
             <th>Description</th>
+            <th>Schedule</th>
             @if (User.IsInRole("Admin"))
             {
                 <th>Actions</th>
@@ -36,11 +37,15 @@
                 <td>@car.Seats</td>
                 <td>@car.PricePerDay €/day</td>
                 <td>@car.Description</td>
+                <td>
+                    <a asp-action="Schedule" asp-route-id="@car.Id" class="btn btn-info btn-sm">Schedule</a>
+                </td>
                 @if (User.IsInRole("Admin"))
                 {
                     <td>
                         <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning btn-sm">Edit</a>
                         <a asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger btn-sm">Delete</a>
+                        
                     </td>
                 }
             </tr>
