@@ -42,6 +42,13 @@ namespace RentACar.Web.Controllers
             if (!ModelState.IsValid)
                 return View(model);
 
+            // Check for duplicate EGN
+            if (_userManager.Users.Any(u => u.EGN == model.EGN))
+            {
+                ModelState.AddModelError(string.Empty, "A user with this EGN already exists");
+                return View(model);
+            }
+
             var user = new ApplicationUser
             {
                 UserName = model.UserName,
