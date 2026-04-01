@@ -109,18 +109,28 @@ git clone https://github.com/Nik0la074/RentACar.git
 cd RentACar
 ```
 
-2. Apply database migrations:
+2. Install the correct EF Core tools version:
+```bash
+dotnet tool uninstall --global dotnet-ef
+dotnet tool install --global dotnet-ef --version 9.0.3
+```
+
+3. Restore packages:
+```bash
+dotnet restore
+```
+
+4. Apply database migrations:
 ```bash
 dotnet ef database update --project RentACar.Data --startup-project RentACar.Web
 ```
 
-3. Run the application:
+5. Run the application:
 ```bash
 dotnet run --project RentACar.Web
 ```
 
-4. Open your browser at `https://localhost:5001`
-
+6. Open your browser at `https://localhost:5001`
 ---
 
 ## Default Accounts
