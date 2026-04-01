@@ -11,6 +11,7 @@ A three-layer web application for managing car rentals, built with ASP.NET Core 
 - [Getting Started](#getting-started)
 - [Default Accounts](#default-accounts)
 - [Documentation](#documentation)
+- [Validation Rules](#validation-rules)
 
 ---
 
@@ -22,8 +23,8 @@ Rent A Car is a system that serves as a connection between users and a car renta
 
 ## Technologies
 
-- **ASP.NET Core 9.0 MVC**
-- **Entity Framework Core 9.0**
+- **ASP.NET Core 8.0 MVC**
+- **Entity Framework Core 8.0**
 - **ASP.NET Core Identity**
 - **SQL Server (LocalDB)**
 - **Bootstrap 5**
@@ -98,7 +99,8 @@ RentACar/
 ## Getting Started
 
 ### Prerequisites
-- [.NET 9.0 SDK](https://dotnet.microsoft.com/download)
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [Git](https://git-scm.com/download/win)
 - SQL Server LocalDB (included with Visual Studio)
 
 ### Installation
@@ -112,7 +114,7 @@ cd RentACar
 2. Install the correct EF Core tools version:
 ```bash
 dotnet tool uninstall --global dotnet-ef
-dotnet tool install --global dotnet-ef --version 9.0.3
+dotnet tool install --global dotnet-ef --version 8.0.0
 ```
 
 3. Restore packages:
@@ -131,6 +133,7 @@ dotnet run --project RentACar.Web
 ```
 
 6. Open your browser at `https://localhost:5001`
+
 ---
 
 ## Default Accounts
@@ -145,11 +148,10 @@ dotnet run --project RentACar.Web
 
 API documentation is generated using DocFX from the XML summary comments in the code.
 
-### View Documentation
-
-Start the documentation server:
+### Generate Documentation
 ```bash
-docfx C:\path\to\RentACar\docfx.json --serve
+dotnet tool install -g docfx
+docfx docfx.json --serve
 ```
 
 Then open `http://localhost:8080` in your browser.
